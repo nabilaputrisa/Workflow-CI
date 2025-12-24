@@ -1,0 +1,22 @@
+name: coffee-classification-mlproject
+
+# OPSI A: PAKAI CONDA (default)
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    description: "Train coffee classification model"
+    parameters:
+      data_path:
+        type: string
+        default: "kopi_preprocessed.csv"
+      n_estimators:
+        type: int
+        default: 100
+      test_size:
+        type: float
+        default: 0.2
+      random_state:
+        type: int
+        default: 42
+    command: "python modelling.py --data_path {data_path} --n_estimators {n_estimators} --test_size {test_size} --random_state {random_state}"
