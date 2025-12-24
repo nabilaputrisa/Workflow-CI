@@ -48,7 +48,7 @@ jobs:
     # STEP 5: SIMPAN HASIL (OPSIONAL)
     - name: Upload artifacts
       if: success()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: mlflow-results
         path: MLProject/mlruns/
