@@ -11,6 +11,6 @@ dependencies:
   - pandas
   - numpy
   - matplotlib
-  - seaborn
+ 
   - pyyaml
 
