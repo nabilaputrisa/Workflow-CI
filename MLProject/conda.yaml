@@ -1,3 +1,4 @@
+name: coffee-classification-env
 channels:
 - conda-forge
 - defaults
@@ -12,4 +13,4 @@ dependencies:
   - matplotlib==3.8.2
   - seaborn==0.13.0
   - pyyaml==6.0.1
-name: coffee-classification-env
+
